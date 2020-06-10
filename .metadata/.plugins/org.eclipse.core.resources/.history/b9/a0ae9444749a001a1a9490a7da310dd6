@@ -1,0 +1,34 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
+
+public class Taquin {
+	private int dimention;
+	private Case tab [][] ;
+	
+	public Taquin(int dimention) {
+		this.setDimention(dimention);
+	}
+	public Taquin(Taquin t) {
+		this.dimention = t.getDimention();
+		tab = new Case [dimention][dimention];
+		for (int i = 0 ; i< dimention; i++) {
+			for (int j = 0 ; j < dimention ; j++)
+			{
+				this.tab[i][j] = t.tab[i][j];
+			}
+		}
+		
+	}
+	public void setDimention(int dimention) {
+		this.dimention = dimention ;
+		tab = new Case [dimention][dimention];
+		Case.counter = 0;
+		this.init();
+		
+	}
+	public int getDimention() {
+		return this.dimention;
+	}
+}

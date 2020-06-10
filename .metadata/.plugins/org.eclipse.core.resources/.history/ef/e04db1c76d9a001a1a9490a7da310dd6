@@ -1,0 +1,21 @@
+import java.awt.Color;
+import java.awt.event.MouseListener;
+
+import javax.swing.JPanel;
+
+public class Surface extends JPanel implements MouseListener   {
+	
+	private int dimention; // number of cases
+	private int width ; // width of the surface 
+	private int size ; 
+	private final int padding = 8;
+	private Taquin taquin;
+	
+	public Surface () {
+		this.dimention = taquin.getDimention();
+	}
+	
+	
+	
+
+}

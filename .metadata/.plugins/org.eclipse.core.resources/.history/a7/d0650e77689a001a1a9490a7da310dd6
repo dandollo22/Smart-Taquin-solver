@@ -1,0 +1,17 @@
+
+public class Case {
+	private int valeur;
+	private int order ; 
+	public static int counter = 0 ;
+	
+	public Case () {
+		counter++;
+		this.valeur = counter + 1;
+		this.order = counter;
+	}
+	public int getValeur() {
+		return valeur;}
+	}
+	
+
+}
